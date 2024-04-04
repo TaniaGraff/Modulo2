@@ -1,2 +1,3 @@
 # Repo_Modulo2
-Repositorio Ejercicios Módulo 2
+Repositorio de Ejercicios de Pair Programming realizados durante el Módulo 2. *Web Scraping*.
+![imagen_portada_modulo](Imagen_Portada.png)
