@@ -114,22 +114,13 @@ en este aspecto. También nos piden que ordenemos los resultados según el ID de
 */
 
 SELECT 
-order_id,
-shipped_date
-FROM northwind.orders
-ORDER BY shipped_date ASC;
-
-SELECT 
 employee_id,
-MIN(shipped_date) AS ConFechaEnvio,
 COUNT(*) AS NumeroPedidos,
 MAX(freight) AS MaximaCarga
-FROM northwind.orders  
+FROM northwind.orders
 WHERE shipped_date IS NOT NULL
-GROUP BY employee_id, shipped_date
-ORDER BY employee_id ASC
-LIMIT 20
-OFFSET 1;
+GROUP BY employee_id
+ORDER BY employee_id ASC;
 
 /* 
 -- 9. Números de pedidos por día. 
