@@ -92,7 +92,7 @@ FROM northwind.products
 LEFT JOIN northwind.categories
 ON products.category_id = categories.category_id
 LEFT JOIN northwind.order_details
-ON order_details. product_id = products.product_id
+ON order_details.product_id = products.product_id
 GROUP BY IDCategoria, NombreCategoria, NombreProducto
 ORDER BY NombreCategoria ASC;
 
@@ -169,7 +169,7 @@ asociados o no. Muestra el ID del pedido, el nombre de la empresa y la fecha del
 
 SELECT
 orders.order_id AS IDPedido,
-customers.customer_id AS NombreCliente,
+customers.company_name AS NombreCliente,
 orders.order_date AS FechaPedido
 FROM northwind.customers
 LEFT JOIN northwind.orders
